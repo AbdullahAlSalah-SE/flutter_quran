@@ -9,7 +9,7 @@ class Hadith_tafser_screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('التفسير'),
+            title: Text(AppLangKey.explanation.tr()),
             leading: BackButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -27,19 +27,12 @@ class Hadith_tafser_screen extends StatelessWidget {
             child: ListView(children: [
               Center(
                   child: Container(
-                padding:
-                    EdgeInsets.fromLTRB(AppDime.md, AppDime.md, AppDime.md, 0),
-                decoration: BoxDecoration(
-                    color: Color.fromARGB(162, 0, 0, 0),
-                    borderRadius: BorderRadius.circular(AppDime.md)),
-                child: Text('${explanationHadith}',
-                    style: TextStyle(
-                      color: AppColors.bgWhite,
-
-                      // fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    )),
-              )),
+                      padding: EdgeInsets.fromLTRB(
+                          AppDime.md, AppDime.md, AppDime.md, 0),
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(162, 0, 0, 0),
+                          borderRadius: BorderRadius.circular(AppDime.md)),
+                      child: _convertHadith(context, '${explanationHadith}'))),
               SizedBox(
                 height: AppDime.xlg,
               )

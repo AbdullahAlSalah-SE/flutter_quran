@@ -9,7 +9,7 @@ class Hadith_narrator_screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text('الراوي'),
+            title: Text(AppLangKey.narrator.tr()),
             leading: BackButton(
               onPressed: () {
                 Navigator.pop(context);
@@ -31,13 +31,10 @@ class Hadith_narrator_screen extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Color.fromARGB(162, 0, 0, 0),
                         borderRadius: BorderRadius.circular(AppDime.md)),
-                    child: Text('${narratorHadith}',
-                        style: TextStyle(
-                          color: AppColors.bgWhite,
-                          // fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          // backgroundColor: Colors.black54
-                        ))),
+                    child: _convertHadith(context, '${narratorHadith}')),
+              ),
+              SizedBox(
+                height: AppDime.xlg,
               )
             ])));
   }

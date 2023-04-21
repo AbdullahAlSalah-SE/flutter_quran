@@ -13,6 +13,11 @@ class app_images {
   static String hadith_slider = 'assets/images/hadith_slider.png';
   static String hadith_slider02 = 'assets/images/hadith_slider_02.png';
   static String hadith_slider03 = 'assets/images/hadith_slider03.png';
+  static String hadith_slider04 = 'assets/images/muslim_prasis.png';
+
+  static String hadith_slider05 = 'assets/images/hadith_slider05.png';
+  static String hadith_slider06 = 'assets/images/hadith_slider06.png';
+  static String hadith_slider07 = 'assets/images/hadith_slider07.png';
 
   static String sleeping_moon = 'assets/images/sleeping_moon.png';
   static String sleeping_moon02 = 'assets/images/sleeping_moon02.png';
@@ -20,7 +25,6 @@ class app_images {
   static String morning = 'assets/images/morning.png';
   static String night_moon = 'assets/images/night_moon.png';
   static String cloak_01rememeber = 'assets/images/cloak_01rememeber.png';
-  static String muslim_prasis = 'assets/images/muslim_prasis.png';
   static String sleeping_rememmbernce =
       'assets/images/sleeping_rememmbernce_sleeping.png';
 

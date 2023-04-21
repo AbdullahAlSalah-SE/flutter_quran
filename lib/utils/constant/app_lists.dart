@@ -401,6 +401,70 @@ List<Map> audio_mp3_number = [
   {"audio_number": "114.mp3"},
 ];
 
+List<Map> home_screen_hadith_card = [
+  {
+    "hadddith_card_image": app_images.hadith_slider,
+    "hadith": "واذا سألك عبادي عني فاني قريب اجيب دعوة الداعي اذا دعاني",
+    "hadith_eng":
+        "And if My servants ask you about Me, I am near, answering the call of the supplicant if he calls on Me",
+    "hadith_Refrance": "سورة البقرة",
+    "hadith_eng_ref": "Surah - the Cow"
+  },
+  {
+    "hadddith_card_image": app_images.hadith_slider02,
+    "hadith": "ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار",
+    "hadith_eng":
+        "Our Lord, give us good in this world and good in the Hereafter, and save us from the punishment of the Fire.",
+    "hadith_Refrance": "سورة البقرة",
+    "hadith_eng_ref": "Surah - the Cow"
+  },
+  {
+    "hadddith_card_image": app_images.hadith_slider03,
+    "hadith":
+        " اللهم رحمتك أرجو فلا تكلني إلى نفسي طرفة عين، وأصلح لي شأني كله لا إله إلا أنت",
+    "hadith_eng":
+        "O God, I hope for your mercy, so do not leave me to myself for the blink of an eye, and fix all my affairs for me, there is no god but You.",
+    "hadith_Refrance": "صحيح الجامع",
+    "hadith_eng_ref": "Sahih Al-Jami"
+  },
+  {
+    "hadddith_card_image": app_images.hadith_slider04,
+    "hadith":
+        "اللَّهُمَّ آتِنَا في الدُّنْيَا حَسَنَةً وفي الآخِرَةِ حَسَنَةً، وَقِنَا عَذَابَ النَّارِ",
+    "hadith_eng":
+        "O Allah, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.",
+    "hadith_Refrance": "سورة البقرة",
+    "hadith_eng_ref": "Surah - the Cow"
+  },
+  {
+    "hadddith_card_image": app_images.hadith_slider05,
+    "hadith":
+        "اللَّهُمَّ إنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا، ولَا يَغْفِرُ الذُّنُوبَ إلَّا أنْتَ، فَاغْفِرْ لي مِن عِندِكَ مَغْفِرَةً إنَّكَ أنْتَ الغَفُورُ الرَّحِيمُ",
+    "hadith_eng":
+        "O Allah, I have wronged myself a lot, and no one forgives sins except You, so forgive me from Yourself, for You are the Forgiving, the Merciful.",
+    "hadith_Refrance": "صحيح البخاري",
+    "hadith_eng_ref": "Sahih Bukhari",
+  },
+  {
+    "hadddith_card_image": app_images.hadith_slider06,
+    "hadith":
+        "اللَّهمَّ إني أعوذُ بكَ من مُنكراتِ الأخلاقِ والأعمالِ والأَهواءِ والأدواءِ",
+    "hadith_eng":
+        "O Allah, I seek refuge in You from evil morals, actions, desires, and diseases.",
+    "hadith_Refrance": "رواه الألباني",
+    "hadith_eng_ref": "Narrated by Al-Albani",
+  },
+  {
+    "hadddith_card_image": app_images.hadith_slider07,
+    "hadith":
+        "اللَّهمَّ إنِّي أعوذُ بِك من شرِّ ما عَمِلتُ، ومن شرِّ ما لم أعمَلْ",
+    "hadith_eng":
+        "O Allah, I seek refuge in You from the evil of what I did, and from the evil of what I did not do.",
+    "hadith_Refrance": "رواه الألباني",
+    "hadith_eng_ref": "Narrated by Al-Albani",
+  },
+];
+
 List arabic = [];
 List malayalam = [];
 List quran_old_ver = [];

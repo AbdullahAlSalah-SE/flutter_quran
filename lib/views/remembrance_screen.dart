@@ -52,7 +52,7 @@ class Remembrance_page extends StatelessWidget {
                   color_placeholder: AppColors.bgGrey,
                   urlpath: ApiKey.api_dekr_after_pray,
                   remember_text: AppLangKey.praises_remembrances.tr(),
-                  image_path: app_images.muslim_prasis),
+                  image_path: app_images.hadith_slider04),
               remembrance_l_card(
                   color_placeholder: AppColors.bgDark,
                   urlpath: ApiKey.api_dekr_prophets,

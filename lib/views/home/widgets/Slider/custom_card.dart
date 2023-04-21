@@ -5,11 +5,13 @@ class Card_home extends StatelessWidget {
       {Key? key,
       required this.image_path,
       required this.text_info,
+      required this.ref_text,
       required this.title})
       : super(key: key);
   String image_path = '';
   String title = '';
   String text_info = '';
+  String ref_text = '';
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,7 @@ class Card_home extends StatelessWidget {
                 child: Image(image: AssetImage(image_path))),
             Flexible(
                 child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
@@ -46,16 +48,17 @@ class Card_home extends StatelessWidget {
                   text_info,
                   style: GoogleFonts.alike(
                     textStyle: Theme.of(context).textTheme.displayMedium,
-                    fontSize: AppDime.lg,
+                    fontSize:
+                        AppLang.isAr(context) ? AppDime.md_14 : AppDime.md_12,
                   ),
                 ),
                 Row(
                   children: [
                     Text(
-                      'سورة البقرة الاية 18',
+                      ref_text,
                       style: GoogleFonts.alike(
                           textStyle: Theme.of(context).textTheme.displayMedium,
-                          fontSize: 10),
+                          fontSize: AppDime.md_10),
                     ),
                     Expanded(
                         child: SizedBox(

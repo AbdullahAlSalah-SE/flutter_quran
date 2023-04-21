@@ -110,4 +110,6 @@ class AppLangKey {
   static String salam = "salam";
   static String before = "before";
   static String after = "after";
+  static String foutry_nawawiy = "foutry_nawawiy";
+  static String to_memo_hadith = "to_memo_hadith";
 }

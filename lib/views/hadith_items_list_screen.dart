@@ -48,7 +48,7 @@ class _Ahadith_items_listState extends State<Ahadith_items_list> {
     return Scaffold(
       appBar: AppBar(
           title: Text(
-        "ألاربعون النوويه",
+        AppLangKey.foutry_nawawiy.tr(),
       )),
       body: Container(
         decoration: BoxDecoration(
@@ -73,7 +73,7 @@ class _Ahadith_items_listState extends State<Ahadith_items_list> {
                           children: [
                             Text(""),
                             Text(
-                              "لحفظ وسماع الاحاديث النوويه",
+                              AppLangKey.to_memo_hadith.tr(),
                               style: TextStyle(
                                   color: AppTheme.isDark(context)
                                       ? AppColors.bgWhite

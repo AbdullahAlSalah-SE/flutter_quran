@@ -6,6 +6,9 @@ class Home_page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int cards_counter = 0;
+    List<int> list = [1, 2, 3, 4, 5, 6, 7];
+
     return Scaffold(
       drawer: const drawer_Body(),
       appBar: AppBar(
@@ -34,26 +37,26 @@ class Home_page extends StatelessWidget {
                     autoPlayAnimationDuration: Duration(milliseconds: 800),
                     viewportFraction: 0.8,
                   ),
-                  items: [
-                    Card_home(
-                      title: AppLangKey.supplications_that_are_said.tr(),
-                      image_path: app_images.hadith_slider,
-                      text_info:
-                          "واذا سألك عبادي عني فاني قريب اجيب دعوة الداعي اذا دعاني",
-                    ),
-                    Container(
-                        child: Card_home(
-                            title: AppLangKey.supplications_that_are_said.tr(),
-                            image_path: app_images.hadith_slider02,
-                            text_info:
-                                "ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار")),
-                    Container(
-                        child: Card_home(
-                            title: AppLangKey.supplications_that_are_said.tr(),
-                            image_path: app_images.hadith_slider03,
-                            text_info:
-                                " اللهم رحمتك أرجو فلا تكلني إلى نفسي طرفة عين، وأصلح لي شأني كله لا إله إلا أنت")),
-                  ],
+                  items: list
+                      .map(
+                        (item) => Card_home(
+                          title: AppLangKey.supplications_that_are_said.tr(),
+                          image_path: home_screen_hadith_card[cards_counter]
+                              ['hadddith_card_image'],
+                          text_info: AppLang.isAr(context)
+                              ? home_screen_hadith_card[cards_counter]['hadith']
+                              : home_screen_hadith_card[cards_counter]
+                                  ['hadith_eng'],
+                          ref_text: AppLang.isAr(context)
+                              ? home_screen_hadith_card[cards_counter++]
+                                  ['hadith_Refrance']
+                              : home_screen_hadith_card[cards_counter++]
+                                  ['hadith_eng_ref'],
+
+                          // Text(()),
+                        ),
+                      )
+                      .toList(),
                 ),
                 DefaultTextStyle(
                   style: TextStyle(

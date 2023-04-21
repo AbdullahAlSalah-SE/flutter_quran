@@ -17,39 +17,39 @@ class Hadith_screen extends StatelessWidget {
             },
           )),
       body: Container(
-        padding: EdgeInsets.fromLTRB(AppDime.md, AppDime.xlg, AppDime.md, 0),
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.fill,
-                image: AssetImage(AppTheme.isDark(context)
-                    ? app_images.Godnames_page_background_01
-                    : app_images.Godnames_page_background_04))),
-        child: Center(
-            child: Container(
-          // height: 500,
-          child: DefaultTextStyle(
-            style: TextStyle(color: AppColors.bgWhite),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  padding: EdgeInsets.all(
-                    AppDime.md,
+          padding: EdgeInsets.fromLTRB(AppDime.md, AppDime.xlg, AppDime.md, 0),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage(AppTheme.isDark(context)
+                      ? app_images.Godnames_page_background_01
+                      : app_images.Godnames_page_background_04))),
+          child: ListView(
+            children: [
+              Container(
+                // height: 500,
+                child: DefaultTextStyle(
+                  style: TextStyle(color: AppColors.bgWhite),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                          padding: EdgeInsets.all(
+                            AppDime.md,
+                          ),
+                          decoration: BoxDecoration(
+                              color: Color.fromARGB(162, 0, 0, 0),
+                              borderRadius: BorderRadius.circular(AppDime.md)),
+                          child: _convertHadith(context, '${hadith_text}')),
+                    ],
                   ),
-                  decoration: BoxDecoration(
-                      color: Color.fromARGB(162, 0, 0, 0),
-                      borderRadius: BorderRadius.circular(AppDime.md)),
-                  // margin: EdgeInsets.all(AppDime.lg),
-                  // height: 500,
-                  child: Text('${hadith_text}',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                 ),
-              ],
-            ),
-          ),
-        )),
-      ),
+              ),
+              SizedBox(
+                height: AppDime.xlg,
+              ),
+            ],
+          )),
     );
   }
 }

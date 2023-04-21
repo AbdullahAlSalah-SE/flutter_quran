@@ -9,7 +9,13 @@ class AppDime {
 
   static double md = sm * base; // 8.0
   static double md_2 = 10 * base; // 8.0
+  static double md_10 = 10;
+  static double md_11 = 11;
+
+  static double md_12 = 12;
+
   static double md_13 = 13;
+  static double md_14 = 14;
 
   static double lg = md * base; // 16.0
 
