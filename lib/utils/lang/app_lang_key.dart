@@ -1,4 +1,6 @@
 class AppLangKey {
+  static String alsalam = 'AlSalam';
+
   static String qurankarem = 'the_holy_quran';
   static String prayerbead = 'prayer_bead';
   static String prayerbead_01 = 'prayer_bead_01';

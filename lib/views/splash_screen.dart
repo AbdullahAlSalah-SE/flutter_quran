@@ -49,14 +49,9 @@ class _Splash_PageState extends State<Splash_Page> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Image(
-          //   image: AssetImage(app_images.app_logo),
-          //   width: AppDime.half.sw,
-          //   height: AppDime.half.sh,
-          // ),
           AppDime.lg.verticalSpace,
           Text(
-            AppLangKey.qurankarem.tr(),
+            AppLangKey.alsalam.tr(),
             style: TextStyle(
                 backgroundColor: Colors.black87,
                 fontWeight: FontWeight.w900,
