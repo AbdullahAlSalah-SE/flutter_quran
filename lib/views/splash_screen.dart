@@ -53,10 +53,10 @@ class _Splash_PageState extends State<Splash_Page> {
           Text(
             AppLangKey.alsalam.tr(),
             style: TextStyle(
-                backgroundColor: Colors.black87,
+                // backgroundColor: Colors.black87,
                 fontWeight: FontWeight.w900,
-                fontSize: 30,
-                fontFamily: GoogleFonts.notoKufiArabic().fontFamily,
+                fontSize: AppDime.xxlg,
+                fontFamily: GoogleFonts.reemKufi().fontFamily,
                 color: AppColors.bgWhite),
           ),
         ],

@@ -16,6 +16,9 @@ class AppIcons {
   static const String explanation = 'assets/icons/explanation.svg';
   static const String explanation02 = 'assets/icons/explanation02.svg';
 
+  static const String github_light = 'assets/icons/github_light_mod.svg';
+  static const String github_dark2 = 'assets/icons/githubz_dark_mod.svg';
+
   static const String theme_light = 'assets/icons/light_theme.svg';
   static const String rateus = 'assets/icons/rate-diamond-svgrepo-com.svg';
   static const String theme_dark = 'assets/icons/dark_theme.svg';
@@ -38,9 +41,6 @@ class AppIcons {
 
   static const String lang_dark = 'assets/icons/drawer_translate_dark_icon.svg';
 
-
-  static const String hadith_btn_dark =
-      'assets/icons/hadith_btn_dark.svg';
-  static const String hadith_btn_light =
-      'assets/icons/hadith_btn_light.svg';
+  static const String hadith_btn_dark = 'assets/icons/hadith_btn_dark.svg';
+  static const String hadith_btn_light = 'assets/icons/hadith_btn_light.svg';
 }

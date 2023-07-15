@@ -50,7 +50,7 @@ class Remembrance_page extends StatelessWidget {
                   image_path: app_images.sleeping_rememmbernce),
               remembrance_l_card(
                   color_placeholder: AppColors.bgGrey,
-                  urlpath: ApiKey.api_dekr_after_pray,
+                  urlpath: ApiKey.api_dekr_prasing,
                   remember_text: AppLangKey.praises_remembrances.tr(),
                   image_path: app_images.hadith_slider04),
               remembrance_l_card(

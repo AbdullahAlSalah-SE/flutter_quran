@@ -122,6 +122,18 @@ class AppSvg {
     height: xxlg.h,
   );
 
+  static final SvgPicture github_light = SvgPicture.asset(
+    AppIcons.github_light,
+    width: xlg.w,
+    height: xlg.h,
+  );
+  static final SvgPicture github_dark2 = SvgPicture.asset(
+    AppIcons.github_dark2,
+    color: AppColors.bgGold,
+    width: xlg.w,
+    height: xlg.h,
+  );
+
   static final SvgPicture translate_btn_darkmod = SvgPicture.asset(
     AppIcons.translate_btn_darkmod,
     width: xxlg.w,

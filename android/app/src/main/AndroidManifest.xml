@@ -1,5 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_quran">
+
+      <uses-permission android:name="android.permission.INTERNET"/> <!-- Add this -->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <queries>
     <!-- to opens https URLs -->
     <intent>
@@ -7,10 +11,9 @@
             <data android:scheme="https" />
     </intent>
 </queries>
-    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
 
    <application
-        android:label="Al Salam"
+        android:label="Salam"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -24,9 +24,8 @@ class AppThemeChoose {
           backgroundColor: AppColors.quran_Dark_blue,
           foregroundColor: AppColors.bgWhite,
           centerTitle: true,
-          textTheme: Theme.of(context).textTheme.apply(
-                bodyColor: AppColors.bgBlack,
-                displayColor: AppColors.bgBlack,
+          titleTextStyle: Theme.of(context).appBarTheme.titleTextStyle?.apply(
+                color: AppColors.bgBlack,
                 fontFamily: AppLang.isAr(context) ? arFont : enFont,
               ),
 
@@ -88,6 +87,8 @@ class AppThemeChoose {
       ),
       textTheme: Theme.of(context).textTheme.apply(
             bodyColor: AppColors.bgWhite,
+            fontFamily: AppLang.isAr(context) ? arFont : enFont,
+
             displayColor: AppColors.bgWhite,
             // fontFamily: GoogleFonts.pacifico().fontFamily,
             // fontFamily: fontApp,

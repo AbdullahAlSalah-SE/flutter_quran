@@ -61,6 +61,19 @@ class Settings_Drawer extends StatelessWidget {
             }
           },
         ),
+
+        ListTile(
+          title: Text('Github'),
+          leading: AppTheme.isDark(context)
+              ? AppSvg.github_dark2
+              : AppSvg.github_light,
+          onTap: () async {
+            if (!await launchUrl(mygithub,
+                mode: LaunchMode.externalApplication)) {
+              throw 'Could not launch $mygithub';
+            }
+          },
+        ),
       ],
     );
   }

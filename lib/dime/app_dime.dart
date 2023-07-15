@@ -24,6 +24,8 @@ class AppDime {
 
   static double xlg = lg * base; // 32.0
 
+  static double xlg_50 = (xlg * 1.5); // 50.0
+
   static double xxlg = xlg * base; // 64.0
 
   static double xxlg_8 = xxlg * one_25; // 80
